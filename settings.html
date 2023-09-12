@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <!-- meta  -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- // bootstrab // -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/select2.min.css">
+    <!--flatPicker -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.13/flatpickr.min.css"
+        integrity="sha512-MQXduO8IQnJVq1qmySpN87QQkiR1bZHtorbJBD0tzy7/0U9+YIC93QWHeGTEoojMVHWWNkoCp8V6OzVSYrX0oQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- // fontawesome // -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- // css // -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/en-style.css"> -->
+    <title>Document</title>
+</head>
+<body>
+    <div class="side_menu d-flex flex-column">
+        <i class="fa-solid fa-circle-xmark main-color text-left close_menu_icon"></i>
+        <a class="contain_dashboard_logo text-center mb-20 d-flex" href="index.html">
+            <img src="img/nnnn.jpg" alt="user" class="userImg" loading="lazy">
+            <div class="hide-section contain-rate">
+                <h6 class="text-dark text-bold">نورهان عادل</h6>
+                <div class="rate sm "> <span class="m-end-5">4.5</span><i class="fa-solid fa-star active"></i></div>
+            </div>
+        </a>
+        <ul class="side_menu_ul">
+            <li class="about_section active">
+                <a href="index.html" class="d-flex align-items-center main-color-2 p-10 f-16">
+
+                    <i class="fa-solid fa-house f-16"></i>
+                    <span class="hide-section m-start-10">الرئيسية </span>
+                </a>
+            </li>
+            <li class="about_section">
+                <a href="calender.html" class="d-flex align-items-center main-color-2 p-10 f-16">
+
+                    <i class="fa-regular fa-calendar-minus f-16"></i>
+                    <span class="hide-section m-start-10">التقويم </span>
+                </a>
+            </li>
+            <li class="about_section">
+                <a href="rating.html" class="d-flex align-items-center main-color-2 p-10 f-16">
+                    <i class="fa-regular fa-star f-16"></i>
+                    <span class="hide-section m-start-10">تقييماتي </span>
+                </a>
+            </li>
+            <li class="about_section">
+                <a href="keyword.html" class="d-flex align-items-center main-color-2 p-10 f-16">
+                    <i class="fa-regular fa-keyboard  f-16"></i>
+                    <span class="hide-section m-start-10"> كلمات مفتاحية </span>
+                </a>
+            </li>
+            <li class="about_section">
+                <a href="financialAccounts.html" class="d-flex align-items-center main-color-2 p-10 f-16">
+                    <i class="fa-regular fa-paste  f-16"></i>
+                    <span class="hide-section m-start-10">الحسابات المالية</span>
+                </a>
+            </li>
+            <li class="about_section">
+                <a href="settings.html" class="d-flex align-items-center main-color-2 p-10 f-16">
+                    <i class="fa-solid fa-gear  f-16"></i>
+                    <span class="hide-section m-start-10"> الاعدادات </span>
+                </a>
+            </li>
+            <li class="about_section">
+                <a href="contactUs.html" class="d-flex align-items-center main-color-2 p-10 f-16">
+                    <i class="fa-solid fa-phone  f-16"></i>
+                    <span class="hide-section m-start-10 "> تواصل معنا </span>
+                </a>
+            </li>
+            <li class="about_section">
+                <a href="ComplaintsAndSuggestions.html" class="d-flex align-items-center main-color-2 p-10 f-16">
+                    <i class="fa-solid fa-file-circle-exclamation f-16"></i>
+                    <span class="hide-section m-start-10 "> الشكاوي والمقترحات </span>
+                </a>
+            </li>
+
+            <li class="about_section">
+                <a href="termsAndCondition.html" class="d-flex align-items-center main-color-2 p-10 f-16">
+                    <i class="fa-solid fa-file-circle-check f-16"></i>
+                    <span class="hide-section m-start-10 f-16"> الشروط والاحكام </span>
+                </a>
+            </li>
+            <li class="about_section">
+                <a href="login.html" class="d-flex align-items-center main-color-2 p-10 f-16">
+                    <i class="fa-solid fa-right-from-bracket f-16"></i>
+                    <span class="hide-section m-start-10"> تسجيل الخروج </span>
+                </a>
+            </li>
+
+
+        </ul>
+    </div>
+    <div id="main">
+        <header class="dashboard_topper p-10">
+            <div class="container">
+                <div class="flex-between">
+                    <a href="index.html" class="m-auto">
+                        <img src="img/logo-main.png" alt="logo" class="logo m-end-10" loading="lazy">
+                    </a>
+                    <a class="position-relative" href="notification.html">
+                        <i class="fa-regular fa-bell f-27  text-dark"></i>
+                        <div class="contain-notification-num">
+                            <span>3</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </header>
+        <div class="body-content">
+            <div class="container">
+                <div class="row flex-column align-items-center">
+
+                    <div class="col-md-6 col-12">
+                        <form action="" class="frame s-space ">
+                            <div class="form-group text-center">
+                                <label for="file" class="position-relative m-auto">
+                                    <input type="file" onchange="readURL(this);" id="file" hidden="">
+                                    <div class="edit_icon">
+                                        <i class="fa-solid fa-arrow-up-from-bracket f-20"></i>
+                                    </div>
+                                    <div class="img_gallery"><img id="imgPrev" src="img/nnnn.jpg" alt="userPic"></div>
+                                </label>
+                                <h6> الصورة الشخصية </h6>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="name"><span class="m-end-5">الاسم</span><span
+                                        class="text-danger f-16">*</span></label>
+                                <input type="text" class="form-control" id="name" placeholder="نورهان عادل">
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label" for="num"><span class="m-end-5">رقم الجوال</span><span
+                                        class="text-danger f-16">*</span></label>
+                                <input type="number" class="form-control" id="num" placeholder="+96612345678">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="mail"><span class="m-end-5">البريد الالكتروني</span><span
+                                        class="text-danger f-16">*</span></label>
+                                <input type="mail" class="form-control" id="mail" placeholder="example@gmail.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="text" class="form-label"> <span class="m-end-5"> نبذة تعريفية</span><span
+                                        class="text-danger f-16">*</span></label>
+                                <textarea name="text" id="text" rows="2" cols="3" class="form-control"
+                                    placeholder="ادخل نص الرساله"></textarea>
+                            </div>
+                            <!-- imgs -->
+                            <div class="form-group">
+                                <label for="files"><span class="m-end-5"> صور </span><span
+                                        class="text-danger f-16">*</span> </label>
+                                <input type="file" id="files" name="files[]" multiple hidden />
+                                <label for="files" class="form-control files flex-between">
+                                    <span class="f-13"> ارفاق ملف</span>
+                                    <i class="fa-solid fa-upload"></i>
+                                </label>
+                                <div class="filesContainer">
+
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="text" class="form-label"><span class="m-end-5"> مدة الاستشاره </span><span
+                                        class="text-danger f-16">*</span></label>
+                                <select class=" select form-control" name="states[]">
+                                    <option value="15"><span>دقيقه</span><span>15</span></option>
+                                    <option value="30"><span>30</span><span>دقيقه</span></option>
+                                    <option value="60"><span>60</span><span>دقيقه</span></option>
+
+                                </select>
+                            </div>
+                            <!-- consulting time -->
+
+                            <div class="form-group">
+                                <label class="form-label"><span class="m-end-5"> مواعيد العمل </span><span
+                                        class="text-danger f-16">*</span></label>
+                                <div class="edit-time " id="one">
+                                    <div class="text-center day  mb-3">
+                                        <h6>السبت</h6>
+                                    </div>
+                                    <div class="mb-3">
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <input type="text" class="inputText1 from-control timeBox"
+                                                        placeholder="من">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <input type="text" class="inputText2 from-control  timeBox"
+                                                        placeholder="الي">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="input-group mb-3 flex-between ">
+                                        <label class="input-group-prepend gap-10 ">
+
+                                            <input type="checkbox" class="checkBox" id="check1"
+                                                aria-label="Checkbox for following text input" hidden>
+                                            <div class="contain-check">
+                                                <i class="fa-solid fa-check"></i>
+                                            </div>
+                                            <label for="check1"> لا يوجد مواعيد بهذا اليوم
+                                            </label>
+                                        </label>
+                                        <div>
+                                            <button class="btn main_btn certain sm " type="button"> تأكيد </button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="edit-time " id="two">
+                                    <div class="text-center day mb-3">
+                                        <h6>الاحد</h6>
+                                    </div>
+                                    <div class="mb-3">
+
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <input type="text" class="inputText1 from-control timeBox"
+                                                        placeholder="من">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <input type="text" class="inputText2 from-control  timeBox"
+                                                        placeholder="الي">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="input-group mb-3 flex-between ">
+                                        <label class="input-group-prepend gap-10 ">
+
+                                            <input type="checkbox" class="checkBox" id="check2"
+                                                aria-label="Checkbox for following text input" hidden>
+                                            <div class="contain-check">
+                                                <i class="fa-solid fa-check"></i>
+                                            </div>
+                                            <label for="check2"> لا يوجد مواعيد بهذا اليوم
+                                            </label>
+                                        </label>
+                                        <div>
+                                            <button class="btn main_btn certain sm " type="button"> تأكيد </button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="edit-time" id="three">
+                                    <div class="text-center day mb-3">
+                                        <h6>الاتنين</h6>
+                                    </div>
+                                    <div class="mb-3">
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <input type="text" class="inputText1 from-control timeBox"
+                                                        placeholder="من">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <input type="text" class="inputText2 from-control  timeBox"
+                                                        placeholder="الي">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="input-group mb-3 flex-between ">
+                                        <label class="input-group-prepend gap-10 ">
+
+                                            <input type="checkbox" class="checkBox" id="check3"
+                                                aria-label="Checkbox for following text input" hidden>
+                                            <div class="contain-check">
+                                                <i class="fa-solid fa-check"></i>
+                                            </div>
+                                            <label for="check3"> لا يوجد مواعيد بهذا اليوم
+                                            </label>
+                                        </label>
+                                        <div>
+                                            <button class="btn main_btn certain sm " type="button"> تأكيد </button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="edit-time" id="four">
+                                    <div class="text-center day  mb-3">
+                                        <h6>الثلاثاء</h6>
+                                    </div>
+                                    <div class="mb-3">
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <input type="text" class="inputText1 from-control timeBox"
+                                                        placeholder="من">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <input type="text" class="inputText2 from-control  timeBox"
+                                                        placeholder="الي">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="input-group mb-3 flex-between ">
+                                        <label class="input-group-prepend gap-10 ">
+
+                                            <input type="checkbox" class="checkBox" id="check4"
+                                                aria-label="Checkbox for following text input" hidden>
+                                            <div class="contain-check">
+                                                <i class="fa-solid fa-check"></i>
+                                            </div>
+                                            <label for="check4"> لا يوجد مواعيد بهذا اليوم
+                                            </label>
+                                        </label>
+                                        <div>
+                                            <button class="btn main_btn certain sm " type="button"> تأكيد </button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="edit-time" id="five">
+                                    <div class="text-center day  mb-3">
+                                        <h6>الاربعاء</h6>
+                                    </div>
+                                    <div class="mb-3">
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <input type="text" class="inputText1 from-control timeBox"
+                                                        placeholder="من">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <input type="text" class="inputText2 from-control  timeBox"
+                                                        placeholder="الي">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="input-group mb-3 flex-between ">
+                                        <label class="input-group-prepend gap-10 ">
+
+                                            <input type="checkbox" class="checkBox" id="check5"
+                                                aria-label="Checkbox for following text input" hidden>
+                                            <div class="contain-check">
+                                                <i class="fa-solid fa-check"></i>
+                                            </div>
+                                            <label for="check5"> لا يوجد مواعيد بهذا اليوم
+                                            </label>
+                                        </label>
+                                        <div>
+                                            <button class="btn main_btn certain sm " type="button"> تأكيد </button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="edit-time" id="six">
+                                    <div class="day text-center mb-3">
+                                        <h6>الخميس</h6>
+                                    </div>
+                                    <div class="mb-3">
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <input type="text" class="inputText1 from-control timeBox"
+                                                        placeholder="من">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <input type="text" class="inputText2 from-control  timeBox"
+                                                        placeholder="الي">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="input-group mb-3 flex-between ">
+                                        <label class="input-group-prepend gap-10 ">
+
+                                            <input type="checkbox" class="checkBox" id="check6"
+                                                aria-label="Checkbox for following text input" hidden>
+                                            <div class="contain-check">
+                                                <i class="fa-solid fa-check"></i>
+                                            </div>
+                                            <label for="check6"> لا يوجد مواعيد بهذا اليوم
+                                            </label>
+                                        </label>
+                                        <div>
+                                            <button class="btn main_btn certain sm " type="button"> تأكيد </button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="edit-time" id="seven">
+                                    <div class="text-center day  mb-3">
+                                        <h6>الجمعه</h6>
+                                    </div>
+                                    <div class="mb-3">
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <input type="text" class="inputText1 from-control timeBox"
+                                                        placeholder="من">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <input type="text" class="inputText2 from-control  timeBox"
+                                                        placeholder="الي">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="input-group mb-3 flex-between ">
+                                        <label class="input-group-prepend gap-10 ">
+
+                                            <input type="checkbox" class="checkBox" id="check7"
+                                                aria-label="Checkbox for following text input" hidden>
+                                            <div class="contain-check">
+                                                <i class="fa-solid fa-check"></i>
+                                            </div>
+                                            <label for="check7"> لا يوجد مواعيد بهذا اليوم
+                                            </label>
+                                        </label>
+                                        <div>
+                                            <button class="btn main_btn certain sm " type="button"> تأكيد </button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="showTime mb-3" data-id="#one">
+                                    <div>
+                                        <div> السبت</div>
+                                        <div>
+                                            <span>من</span>
+                                            <span class="fromText"> 10 ص </span>
+                                            <span>الي</span>
+                                            <span class="toText"> 6 م</span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <i class="fa-solid fa-pen-to-square"></i>
+                                    </div>
+                                </div>
+                                <div class="showTime mb-3" data-id="#two">
+                                    <div>
+                                        <div> الاحد</div>
+                                        <div>
+                                            <span>من</span>
+                                            <span class="fromText"> 10 ص </span>
+                                            <span>الي</span>
+                                            <span class="toText"> 6 م</span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <i class="fa-solid fa-pen-to-square"></i>
+                                    </div>
+                                </div>
+                                <div class="showTime mb-3" data-id="#three">
+                                    <div>
+                                        <div> الاتنين</div>
+                                        <div>
+                                            <span>من</span>
+                                            <span class="fromText"> 10 ص </span>
+                                            <span>الي</span>
+                                            <span class="toText"> 6 م</span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <i class="fa-solid fa-pen-to-square"></i>
+                                    </div>
+                                </div>
+                                <div class="showTime mb-3" data-id="#four">
+                                    <div>
+                                        <div> الثلاثاء</div>
+                                        <div>
+                                            <span>من</span>
+                                            <span class="fromText"> 10 ص </span>
+                                            <span>الي</span>
+                                            <span class="toText"> 6 م</span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <i class="fa-solid fa-pen-to-square"></i>
+                                    </div>
+                                </div>
+                                <div class="showTime mb-3" data-id="#five">
+                                    <div>
+                                        <div> الاربعاء</div>
+                                        <div>
+                                            <span>من</span>
+                                            <span class="fromText"> 10 ص </span>
+                                            <span>الي</span>
+                                            <span class="toText"> 6 م</span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <i class="fa-solid fa-pen-to-square"></i>
+                                    </div>
+                                </div>
+                                <div class="showTime mb-3" data-id="#six">
+                                    <div>
+                                        <div> الخميس</div>
+                                        <div>
+                                            <span>من</span>
+                                            <span class="fromText"> 10 ص </span>
+                                            <span>الي</span>
+                                            <span class="toText"> 6 م</span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <i class="fa-solid fa-pen-to-square"></i>
+                                    </div>
+                                </div>
+                                <div class="showTime mb-3" data-id="#seven">
+                                    <div>
+                                        <div> الجمعه</div>
+                                        <div>
+                                            <span>من</span>
+                                            <span class="fromText"> 10 ص </span>
+                                            <span>الي</span>
+                                            <span class="toText"> 6 م</span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <i class="fa-solid fa-pen-to-square"></i>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label" for="bankName"><span class="m-end-5">اسم البنك </span><span
+                                        class="text-danger f-16">*</span></label>
+                                <input type="text" class="form-control" id="bankName" placeholder="الراجحي">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="accName"><span class="m-end-5">اسم صاحب الحساب
+                                    </span><span class="text-danger f-16">*</span></label>
+                                <input type="text" class="form-control" id="accName" placeholder="نورهان عادل">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="accNum"><span class="m-end-5"> رقم الحساب </span><span
+                                        class="text-danger f-16">*</span></label>
+                                <input type="number" class="form-control" id="accNum" placeholder="000000000000">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="ipan"><span class="m-end-5"> رقم الايبان </span><span
+                                        class="text-danger f-16">*</span></label>
+                                <input type="number" class="form-control" id="ipan" placeholder="000000000000">
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <button class="btn main_btn w-100">
+                                        حفظ
+                                    </button>
+                                </div>
+                                <div class="col-md-6">
+                                    <a class="btn main_btn w-100 gray_btn py-2" href="changePassword.html">
+                                        تغيير كلمه المرور
+                                    </a>
+                                </div>
+
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+    <!-- ________________ // loader // ________________ -->
+    <div class="loader">
+        <div class="path">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <!-- _______________ // end_Page // _______________ -->
+    <!-- fixed -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <!-- <script src="js/popper.min.js"></script> -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.13/flatpickr.min.js"
+        integrity="sha512-K/oyQtMXpxI4+K0W7H25UopjM8pzq0yrVdFdG21Fh5dBe91I40pDd9A4lzNlHPHBIP2cwZuoxaUSX0GJSObvGA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="js/select2.min.js"></script>
+    <!-- // main-script //  -->
+    <script src="js/script.js"></script>
+    <script>
+        let allLinks = document.querySelectorAll(".side_menu_ul li a ");
+
+        allLinks.forEach((link) => {
+            if (link.href == location.href) {
+                link.parentElement.classList.add('active')
+            } else if (link.href !== location.href) {
+                link.parentElement.classList.remove('active');
+            }
+        })
+        $(document).ready(function () {
+            $(".inputText2").prop('disabled', true);
+            $(".inputText1").flatpickr({
+                enableTime: true,
+                noCalendar: true,
+                defaultHour: 10,
+                
+                onChange: function (selectedDates, dateStr, instance) {
+                    $(".inputText2").flatpickr({
+                        minTime: dateStr,
+                        enableTime: true,
+                        noCalendar: true,
+                        defaultHour: Number($(".inputText1").val().slice(0, 2)) + 1
+                    });
+                }
+            });
+
+        });
+
+        let showTime = document.querySelectorAll(".showTime");
+        let editTime = document.querySelectorAll('.edit-time')
+        showTime.forEach((ele) => {
+            ele.addEventListener("click", function (e) {
+                editTime.forEach((el) => {
+                    el.style.display = "none"
+                })
+                document.querySelector(e.currentTarget.dataset.id).style.display = "block"
+                let time = document.querySelector(e.currentTarget.dataset.id);
+                let fromText = ele.querySelector('.fromText')
+                let toText = ele.querySelector('.toText')
+                let toInput = time.querySelector('.inputText1')
+                let fromInput = time.querySelector('.inputText2')
+                toInput.onchange = function () {
+                    let val = this.value;
+                    let calenderOpened = document.querySelector('.flatpickr-calendar.animate.open')
+                    let amPm = calenderOpened.querySelector('.flatpickr-am-pm').textContent
+                    fromText.innerHTML = val
+                    fromText.innerHTML += ` ${amPm} `
+                    $(fromInput).prop('disabled', false);
+                }
+                fromInput.onchange = function () {
+                    let val = this.value
+                    let calenderOpened = document.querySelector('.flatpickr-calendar.animate.open')
+                    let amPm = calenderOpened.querySelector('.flatpickr-am-pm').textContent
+                    toText.innerHTML = val
+                    toText.innerHTML += ` ${amPm} `
+                    console.log($(".inputText1").val().slice(0, 2))
+                    var num = $(".inputText1").val().slice(0, 2)
+                    var numPlus = num + 1
+                    console.log(numPlus)
+                }
+
+            })
+        })
+        let certainBTn = document.querySelector('.certain')
+        certainBTn.onclick = function () {
+            let parentElement = this.parentElement.parentElement.parentElement
+            parentElement.style.display = 'none'
+        }
+        // img preview // 
+        function readURL(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+                reader.onload = function (e) {
+                    $('#imgPrev')
+                        .attr('src', e.target.result);
+                };
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+        $(document).ready(function () {
+            if (window.File && window.FileList && window.FileReader) {
+                $("#files").on("change", function (e) {
+                    var files = e.target.files,
+                        filesLength = files.length;
+                    for (var i = 0; i < filesLength; i++) {
+                        var f = files[i]
+                        var fileReader = new FileReader();
+                        fileReader.onload = (function (e) {
+                            var file = e.target;
+                            $("<span class=\"pip\">" +
+                                "<img class=\"imageThumb\" src=\"" + e.target.result + "\" title=\"" + file.name + "\"/>" +
+                                "<br/><i class=\"fa-solid fa-circle-xmark text-danger remove\"></i>" +
+                                "</span>").appendTo(".filesContainer");
+                            $(".remove").click(function () {
+                                $(this).parent(".pip").remove();
+                            });
+
+                        });
+                        fileReader.readAsDataURL(f);
+                    }
+                    console.log(files);
+                });
+            } else {
+                alert("Your browser doesn't support to File API")
+            }
+        });
+        $(document).ready(function () {
+            $('.select').select2({
+                placeholder: "30 دقيقة",
+                dropdownCssClass: 'no-search',
+
+            });
+        });
+    </script>
+</body>
+
+</html>

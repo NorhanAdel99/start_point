@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <!-- meta  -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- // bootstrab // -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/select2.min.css">
+    <!--flatPicker -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.13/flatpickr.min.css"
+        integrity="sha512-MQXduO8IQnJVq1qmySpN87QQkiR1bZHtorbJBD0tzy7/0U9+YIC93QWHeGTEoojMVHWWNkoCp8V6OzVSYrX0oQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- // fontawesome // -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- // css // -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/en-style.css"> -->
+    <title>Document</title>
+    <style>
+        .showTime {
+            display: none;
+        }
+
+        .fill-mails {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="main" class="fullWidth">
+        <header class="dashboard_topper p-10">
+            <div class="container">
+                <div class="flex-center">
+                    <a href="index.html" class="m-auto">
+                        <img src="img/logo-main.png" alt="logo" class="logo m-end-10" loading="lazy">
+                    </a>
+                </div>
+            </div>
+        </header>
+        <div class="body-content">
+            <div class="container">
+                <div class="row flex-column align-items-center">
+                    <div class="col-md-6 col-12">
+                        <div class="frame s-space ">
+                            <form action="">
+                                <div class="form-group text-center">
+                                    <label for="file" class="position-relative m-auto">
+                                        <input type="file" onchange="readURL(this);" id="file" hidden="">
+                                        <div class="edit_icon border">
+                                            <i class="fa-solid fa-arrow-up-from-bracket f-20"></i>
+                                        </div>
+                                        <div class="img_gallery"><img id="imgPrev" src="" alt="userPic"></div>
+                                    </label>
+                                    <h6> الصورة الشخصية </h6>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label" for="name"><span class="m-end-5">الاسم</span><span
+                                            class="text-danger f-16">*</span></label>
+                                    <input type="text" class="form-control" id="name" placeholder="نورهان عادل">
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="form-label" for="num"><span class="m-end-5">رقم الجوال</span><span
+                                            class="text-danger f-16">*</span></label>
+                                    <input type="number" class="form-control" id="num" placeholder="+96612345678">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label" for="mail"><span class="m-end-5">البريد
+                                            الالكتروني</span><span class="text-danger f-16">*</span></label>
+                                    <input type="mail" class="form-control" id="mail" placeholder="example@gmail.com">
+                                </div>
+                                <div class="form-group">
+                                    <label for="text" class="form-label"> <span class="m-end-5"> نبذة
+                                            تعريفية</span><span class="text-danger f-16">*</span></label>
+                                    <textarea name="text" id="text" rows="5" class="form-control"
+                                        placeholder="ادخل نص الرساله"></textarea>
+                                </div>
+                                <!-- imgs -->
+                                <div class="form-group">
+                                    <label for="files"><span class="m-end-5"> صور </span><span
+                                            class="text-danger f-16">*</span> </label>
+                                    <input type="file" id="files" name="files[]" multiple hidden />
+                                    <label for="files" class="form-control files">
+                                        <span> ارفاق ملف</span>
+                                    </label>
+                                    <div class="filesContainer">
+
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="text" class="form-label"><span class="m-end-5"> مدة الاستشاره
+                                        </span><span class="text-danger f-16">*</span></label>
+                                    <select class=" select form-control" name="states[]">
+                                        <option value="15"><span>دقيقه</span><span>15</span></option>
+                                        <option value="30"><span>30</span><span>دقيقه</span></option>
+                                        <option value="60"><span>60</span><span>دقيقه</span></option>
+
+                                    </select>
+                                </div>
+                                <!-- consulting time -->
+
+                                <div class="form-group">
+                                    <label class="form-label"><span class="m-end-5"> مواعيد العمل </span><span
+                                            class="text-danger f-16">*</span></label>
+                                    <!-- tabs -->
+                                    <!-- ---------- -->
+                                    <ul class="nav nav-tabs days-tabs justify-content-lg-between justify-content-start gap-10"
+                                        id="myTab" role="tablist">
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link  active " id="saturday-tab" data-toggle="tab"
+                                                data-target="#saturday" type="button" role="tab" aria-controls="home"
+                                                aria-selected="true">السيت </button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link" id="sunday-tab" data-toggle="tab"
+                                                data-target="#sunday" type="button" role="tab" aria-controls="sunday"
+                                                aria-selected="false">الاحد
+                                            </button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link gray_btn" id="monday-tab" data-toggle="tab"
+                                                data-target="#monday" type="button" role="tab" aria-controls="monday"
+                                                aria-selected="false">الاتنين</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link gray_btn" id="tuesday-tab" data-toggle="tab"
+                                                data-target="#tuesday" type="button" role="tab" aria-controls="tuesday"
+                                                aria-selected="false">الثلاثاء</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link gray_btn" id="wensday-tab" data-toggle="tab"
+                                                data-target="#wensday" type="button" role="tab" aria-controls="wensday"
+                                                aria-selected="false">الاربعاء</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link gray_btn" id="thursday-tab" data-toggle="tab"
+                                                data-target="#thursday" type="button" role="tab"
+                                                aria-controls="thursday" aria-selected="false">الخميس</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link gray_btn" id="friday-tab" data-toggle="tab"
+                                                data-target="#friday" type="button" role="tab" aria-controls="friday"
+                                                aria-selected="false">الجمعة</button>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-content" id="myTabContent">
+                                        <div class="tab-pane fade show active edit-time my-3" id="saturday"
+                                            role="tabpanel" aria-labelledby="saturday-tab">
+                                            <div class="text-center day  mb-3">
+                                                <h6>السبت</h6>
+                                            </div>
+                                            <div class="mb-3">
+                                                <div class="row">
+                                                    <div class="col-lg-6">
+                                                        <div class="form-group">
+                                                            <input type="text" class="inputText1 from-control timeBox"
+                                                                placeholder="من">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6">
+                                                        <div class="form-group">
+                                                            <input type="text" class="inputText2 from-control  timeBox"
+                                                                placeholder="الي">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="input-group mb-3 flex-between ">
+                                                <label class="input-group-prepend gap-10 ">
+
+                                                    <input type="checkbox" class="checkBox" id="check1"
+                                                        aria-label="Checkbox for following text input" hidden>
+                                                    <div class="contain-check">
+                                                        <i class="fa-solid fa-check"></i>
+                                                    </div>
+                                                    <label for="check1"> لا يوجد مواعيد بهذا اليوم
+                                                    </label>
+                                                </label>
+                                                <div>
+                                                    <button class="btn main_btn certain sm  btnNext" type="button">
+                                                        تأكيد
+                                                    </button>
+                                                </div>
+
+                                            </div>
+                                            <div class="showTime mb-3" data-id="saturday">
+                                                <div>
+                                                    <div> السبت</div>
+                                                    <div>
+                                                        <span>من</span>
+                                                        <span class="fromText">10 ص</span>
+                                                        <span>الي</span>
+                                                        <span class="toText">6 م</span>
+                                                    </div>
+                                                </div>
+                                                <div class="removeParent">
+                                                    <i class="fa-solid fa-square-xmark text-danger"></i>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="tab-pane fade edit-time my-3" id="sunday" role="tabpanel"
+                                            aria-labelledby="sunday-tab">
+                                            <div class="text-center day  mb-3">
+                                                <h6>الأحد</h6>
+                                            </div>
+                                            <div class="mb-3">
+                                                <div class="row">
+                                                    <div class="col-lg-6">
+                                                        <div class="form-group">
+                                                            <input type="text" class="inputText1 from-control timeBox"
+                                                                placeholder="من">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6">
+                                                        <div class="form-group">
+                                                            <input type="text" class="inputText2 from-control  timeBox"
+                                                                placeholder="الي">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="input-group mb-3 flex-between ">
+                                                <label class="input-group-prepend gap-10 ">
+
+                                                    <input type="checkbox" class="checkBox" id="check1"
+                                                        aria-label="Checkbox for following text input" hidden>
+                                                    <div class="contain-check">
+                                                        <i class="fa-solid fa-check"></i>
+                                                    </div>
+                                                    <label for="check1"> لا يوجد مواعيد بهذا اليوم
+                                                    </label>
+                                                </label>
+                                                <div>
+                                                    <button class="btn main_btn certain sm  btnNext" type="button">
+                                                        تأكيد
+                                                    </button>
+                                                </div>
+
+                                            </div>
+                                            <div class="showTime mb-3" data-id="sunday">
+                                                <div>
+                                                    <div> الاحد</div>
+                                                    <div>
+                                                        <span>من</span>
+                                                        <span class="fromText">10 ص</span>
+                                                        <span>الي</span>
+                                                        <span class="toText">6 م</span>
+                                                    </div>
+                                                </div>
+                                                <div class="removeParent">
+                                                    <i class="fa-solid fa-square-xmark text-danger"></i>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="tab-pane fade edit-time my-3" id="monday" role="tabpanel"
+                                            aria-labelledby="monday-tab">
+                                            <div class="text-center day mb-3">
+                                                <h6>الاثنين</h6>
+                                            </div>
+                                            <div class="mb-3">
+                                                <div class="row">
+                                                    <div class="col-lg-6">
+                                                        <div class="form-group">
+                                                            <input type="text" class="inputText1 from-control timeBox"
+                                                                placeholder="من">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6">
+                                                        <div class="form-group">
+                                                            <input type="text" class="inputText2 from-control  timeBox"
+                                                                placeholder="الي">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="input-group mb-3 flex-between ">
+                                                <label class="input-group-prepend gap-10 ">
+
+                                                    <input type="checkbox" class="checkBox" id="check2"
+                                                        aria-label="Checkbox for following text input" hidden>
+                                                    <div class="contain-check">
+                                                        <i class="fa-solid fa-check"></i>
+                                                    </div>
+                                                    <label for="check2"> لا يوجد مواعيد بهذا اليوم
+                                                    </label>
+                                                </label>
+                                                <div>
+                                                    <button class="btn main_btn certain sm btnNext" type="button"> تأكيد
+                                                    </button>
+                                                </div>
+
+                                            </div>
+                                            <div class="showTime mb-3" data-id="monday">
+                                                <div>
+                                                    <div> الاتنين</div>
+                                                    <div>
+                                                        <span>من</span>
+                                                        <span class="fromText">10 ص</span>
+                                                        <span>الي</span>
+                                                        <span class="toText">6 م</span>
+                                                    </div>
+                                                </div>
+                                                <div class="removeParent">
+                                                    <i class="fa-solid fa-square-xmark text-danger"></i>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="tab-pane fade edit-time my-3" id="tuesday" role="tabpanel"
+                                            aria-labelledby="tuesday-tab">
+                                            <div class="text-center day mb-3">
+                                                <h6>الثلاثاء</h6>
+                                            </div>
+                                            <div class="mb-3">
+                                                <div class="row">
+                                                    <div class="col-lg-6">
+                                                        <div class="form-group">
+                                                            <input type="text" class="inputText1 from-control timeBox"
+                                                                placeholder="من">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6">
+                                                        <div class="form-group">
+                                                            <input type="text" class="inputText2 from-control  timeBox"
+                                                                placeholder="الي">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="input-group mb-3 flex-between ">
+                                                <label class="input-group-prepend gap-10 ">
+
+                                                    <input type="checkbox" class="checkBox" id="check3"
+                                                        aria-label="Checkbox for following text input" hidden>
+                                                    <div class="contain-check">
+                                                        <i class="fa-solid fa-check"></i>
+                                                    </div>
+                                                    <label for="check3"> لا يوجد مواعيد بهذا اليوم
+                                                    </label>
+                                                </label>
+                                                <div>
+                                                    <button class="btn main_btn certain sm btnNext" type="button"> تأكيد
+                                                    </button>
+                                                </div>
+
+                                            </div>
+                                            <div class="showTime mb-3" data-id="tuesday">
+                                                <div>
+                                                    <div> الثلاثاء</div>
+                                                    <div>
+                                                        <span>من</span>
+                                                        <span class="fromText">10 ص</span>
+                                                        <span>الي</span>
+                                                        <span class="toText">6 م</span>
+                                                    </div>
+                                                </div>
+                                                <div class="removeParent">
+                                                    <i class="fa-solid fa-square-xmark text-danger"></i>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="tab-pane fade edit-time my-3" id="wensday" role="tabpanel"
+                                            aria-labelledby="wensday-tab">
+                                            <div class="text-center day  mb-3">
+                                                <h6>الاربعاء</h6>
+                                            </div>
+                                            <div class="mb-3">
+                                                <div class="row">
+                                                    <div class="col-lg-6">
+                                                        <div class="form-group">
+                                                            <input type="text" class="inputText1 from-control timeBox"
+                                                                placeholder="من">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6">
+                                                        <div class="form-group">
+                                                            <input type="text" class="inputText2 from-control  timeBox"
+                                                                placeholder="الي">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="input-group mb-3 flex-between ">
+                                                <label class="input-group-prepend gap-10 ">
+
+                                                    <input type="checkbox" class="checkBox" id="check1"
+                                                        aria-label="Checkbox for following text input" hidden>
+                                                    <div class="contain-check">
+                                                        <i class="fa-solid fa-check"></i>
+                                                    </div>
+                                                    <label for="check1"> لا يوجد مواعيد بهذا اليوم
+                                                    </label>
+                                                </label>
+                                                <div>
+                                                    <button class="btn main_btn certain sm btnNext" type="button"> تأكيد
+                                                    </button>
+                                                </div>
+
+                                            </div>
+                                            <div class="showTime mb-3" data-id="wensday">
+                                                <div>
+                                                    <div> الاربعاء</div>
+                                                    <div>
+                                                        <span>من</span>
+                                                        <span class="fromText">10 ص</span>
+                                                        <span>الي</span>
+                                                        <span class="toText">6 م</span>
+                                                    </div>
+                                                </div>
+                                                <div class="removeParent">
+                                                    <i class="fa-solid fa-square-xmark text-danger"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade edit-time my-3" id="thursday" role="tabpanel"
+                                            aria-labelledby="thursday-tab">
+                                            <div class="text-center day  mb-3">
+                                                <h6>الخميس</h6>
+                                            </div>
+                                            <div class="mb-3">
+                                                <div class="row">
+                                                    <div class="col-lg-6">
+                                                        <div class="form-group">
+                                                            <input type="text" class="inputText1 from-control timeBox"
+                                                                placeholder="من">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6">
+                                                        <div class="form-group">
+                                                            <input type="text" class="inputText2 from-control  timeBox"
+                                                                placeholder="الي">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="input-group mb-3 flex-between ">
+                                                <label class="input-group-prepend gap-10 ">
+
+                                                    <input type="checkbox" class="checkBox" id="check1"
+                                                        aria-label="Checkbox for following text input" hidden>
+                                                    <div class="contain-check">
+                                                        <i class="fa-solid fa-check"></i>
+                                                    </div>
+                                                    <label for="check1"> لا يوجد مواعيد بهذا اليوم
+                                                    </label>
+                                                </label>
+                                                <div>
+                                                    <button class="btn main_btn certain sm btnNext" type="button"> تأكيد
+                                                    </button>
+                                                </div>
+
+                                            </div>
+                                            <div class="showTime mb-3" data-id="thursday">
+                                                <div>
+                                                    <div> الخميس</div>
+                                                    <div>
+                                                        <span>من</span>
+                                                        <span class="fromText">10 ص</span>
+                                                        <span>الي</span>
+                                                        <span class="toText">6 م</span>
+                                                    </div>
+                                                </div>
+                                                <div class="removeParent">
+                                                    <i class="fa-solid fa-square-xmark text-danger"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade edit-time my-3" id="friday" role="tabpanel"
+                                            aria-labelledby="friday-tab">
+                                            <div class="text-center day  mb-3">
+                                                <h6>الجمعة </h6>
+                                            </div>
+                                            <div class="mb-3">
+                                                <div class="row">
+                                                    <div class="col-lg-6">
+                                                        <div class="form-group">
+                                                            <input type="text" class="inputText1 from-control timeBox"
+                                                                placeholder="من">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6">
+                                                        <div class="form-group">
+                                                            <input type="text" class="inputText2 from-control  timeBox"
+                                                                placeholder="الي">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="input-group mb-3 flex-between ">
+                                                <label class="input-group-prepend gap-10 ">
+
+                                                    <input type="checkbox" class="checkBox" id="check1"
+                                                        aria-label="Checkbox for following text input" hidden>
+                                                    <div class="contain-check">
+                                                        <i class="fa-solid fa-check"></i>
+                                                    </div>
+                                                    <label for="check1"> لا يوجد مواعيد بهذا اليوم
+                                                    </label>
+                                                </label>
+                                                <div>
+                                                    <button class="btn main_btn certain sm btnNext" type="button"> تأكيد
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="showTime mb-3" data-id="friday">
+                                                <div>
+                                                    <div> الجمعه</div>
+                                                    <div>
+                                                        <span>من</span>
+                                                        <span class="fromText">10 ص</span>
+                                                        <span>الي</span>
+                                                        <span class="toText">6 م</span>
+                                                    </div>
+                                                </div>
+                                                <div class="removeParent">
+                                                    <i class="fa-solid fa-square-xmark text-danger"></i>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- ---------- -->
+                                    <!-- ens tabs  -->
+
+
+
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="form-label" for="bankName"><span class="m-end-5">اسم البنك
+                                        </span><span class="text-danger f-16">*</span></label>
+                                    <input type="text" class="form-control" id="bankName" placeholder="الراجحي">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label" for="accName"><span class="m-end-5">اسم صاحب الحساب
+                                        </span><span class="text-danger f-16">*</span></label>
+                                    <input type="text" class="form-control" id="accName" placeholder="نورهان عادل">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label" for="accNum"><span class="m-end-5"> رقم الحساب
+                                        </span><span class="text-danger f-16">*</span></label>
+                                    <input type="number" class="form-control" id="accNum" placeholder="000000000000">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label" for="ipan"><span class="m-end-5"> رقم الايبان </span><span
+                                            class="text-danger f-16">*</span></label>
+                                    <input type="number" class="form-control" id="ipan" placeholder="000000000000">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label" for="mail"><span class="m-end-5"> كلمة المرور الجديدة
+                                        </span><span class="text-danger f-16">*</span></label>
+                                    <input type="email" class="form-control" id="mail"
+                                        placeholder=" كلمة المرور الجديدة ">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label" for="certainMail"><span class="m-end-5"> تأكيد كلمه المرور
+                                            الجديدة </span><span class="text-danger f-16">*</span></label>
+                                    <input type="email" class="form-control" id="certainMail"
+                                        placeholder=" ادخل كلمه المرور الجديدة ">
+                                </div>
+                                <div class="form-group">
+
+                                    <button class="btn main_btn w-100">
+                                        ارسال
+                                    </button>
+
+
+                                </div>
+
+                                <div class="text-center">
+                                    <span> يوجد لديك حساب </span>
+                                    <a href="login.html" class="main-color"> قم بتسجيل الدخول</a>
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+    <!-- ________________ // loader // ________________ -->
+    <div class="loader">
+        <div class="path">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <!-- _______________ // end_Page // _______________ -->
+    <!-- fixed -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.13/flatpickr.min.js"
+        integrity="sha512-K/oyQtMXpxI4+K0W7H25UopjM8pzq0yrVdFdG21Fh5dBe91I40pDd9A4lzNlHPHBIP2cwZuoxaUSX0GJSObvGA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="js/select2.min.js"></script>
+    <!-- // main-script //  -->
+    <script src="js/script.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".inputText2").prop('disabled', true);
+            $(".inputText1").flatpickr({
+                enableTime: true,
+                noCalendar: true,
+                defaultHour: 10,
+                onChange: function (selectedDates, dateStr, instance) {
+                    $(".inputText2").prop('disabled', false);
+                    $(".inputText2").flatpickr({
+
+                        minTime: dateStr,
+                        enableTime: true,
+                        noCalendar: true,
+                        defaultHour: Number($(".inputText1").val().slice(0, 2)) + 1
+                    });
+                }
+            });
+
+        });
+
+        let showTime = document.querySelectorAll(".showTime");
+        let editTime = document.querySelectorAll('.edit-time')
+
+        let certainBTnAll = document.querySelectorAll('.certain')
+        certainBTnAll.forEach((btn) => {
+            btn.onclick = function (e) {
+                let parentElement = e.target.parentElement.parentElement
+                let parent = e.target.parentElement.parentElement.parentElement
+                let showTime = parentElement.nextElementSibling
+                showTime.style.display = 'flex'
+                let fromText = showTime.querySelector('.fromText')
+                let toText = showTime.querySelector('.toText')
+                let toInput = parent.querySelector('.inputText1')
+                let fromInput = parent.querySelector('.inputText2')
+                let valTo = toInput.value;
+                    fromText.innerHTML = valTo
+                let valFrom = fromInput.value
+                    toText.innerHTML = valFrom
+
+                toInput.onchange = function () {
+                    let valTo = toInput.value;
+                    let calenderOpened = document.querySelector('.flatpickr-calendar.animate.open')
+                    let amPm = calenderOpened.querySelector('.flatpickr-am-pm').textContent
+                    fromText.innerHTML = valTo
+                    fromText.innerHTML += ` ${amPm} `
+                    $(fromInput).prop('disabled', false);
+                }
+                fromInput.onchange = function () {
+                    let valFrom = this.value
+                    let calenderOpened = document.querySelector('.flatpickr-calendar.animate.open')
+                    let amPm = calenderOpened.querySelector('.flatpickr-am-pm').textContent
+                    toText.innerHTML = valFrom
+                    toText.innerHTML += ` ${amPm} `
+                }
+            }
+        })
+
+        $(".removeParent").click(function () {
+            $(this).parent(".showTime").css("display", 'none');
+        });
+        // img preview // 
+        function readURL(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+                reader.onload = function (e) {
+                    $('#imgPrev')
+                        .attr('src', e.target.result);
+                };
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+        $(document).ready(function () {
+            if (window.File && window.FileList && window.FileReader) {
+                $("#files").on("change", function (e) {
+                    var files = e.target.files,
+                        filesLength = files.length;
+                    for (var i = 0; i < filesLength; i++) {
+                        var f = files[i]
+                        var fileReader = new FileReader();
+                        fileReader.onload = (function (e) {
+                            var file = e.target;
+                            $("<span class=\"pip\">" +
+                                "<img class=\"imageThumb\" src=\"" + e.target.result + "\" title=\"" + file.name + "\"/>" +
+                                "<br/><i class=\"fa-solid fa-circle-xmark text-danger remove\"></i>" +
+                                "</span>").appendTo(".filesContainer");
+                            $(".remove").click(function () {
+                                $(this).parent(".pip").remove();
+                            });
+
+
+
+                        });
+                        fileReader.readAsDataURL(f);
+                    }
+                    console.log(files);
+                });
+            } else {
+                alert("Your browser doesn't support to File API")
+            }
+        });
+        $(document).ready(function () {
+            $('.select').select2({
+                placeholder: "30 دقيقة",
+                dropdownCssClass: 'no-search',
+
+            });
+        });
+        // $(document).ready(function () {
+        //     $('.btnNext').click(function () {
+        //         $('.nav-tabs .active').parent().next('li').find('button').trigger('click');
+        //     });
+        // })
+    </script>
+</body>
+
+</html>

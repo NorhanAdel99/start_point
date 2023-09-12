@@ -1,0 +1,1039 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <!-- meta  -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- // bootstrab // -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/select2.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- // fontawesome // -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- // css // -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/en-style.css"> -->
+    <title>Document</title>
+</head>
+
+
+<body>
+    <div class="side_menu d-flex flex-column">
+        <i class="fa-solid fa-circle-xmark main-color text-left close_menu_icon"></i>
+        <a class="contain_dashboard_logo text-center mb-20 d-flex" href="index.html">
+            <img src="img/nnnn.jpg" alt="user" class="userImg" loading="lazy">
+            <div class="hide-section contain-rate">
+                <h6 class="text-dark text-bold">نورهان عادل</h6>
+                <div class="rate sm "> <span class="m-end-5">4.5</span><i class="fa-solid fa-star active"></i></div>
+            </div>
+        </a>
+        <ul class="side_menu_ul">
+            <li class="about_section active">
+                <a href="index.html" class="d-flex align-items-center main-color-2 p-10 f-16">
+
+                    <i class="fa-solid fa-house f-16"></i>
+                    <span class="hide-section m-start-10">الرئيسية </span>
+                </a>
+            </li>
+            <li class="about_section">
+                <a href="calender.html" class="d-flex align-items-center main-color-2 p-10 f-16">
+
+                    <i class="fa-regular fa-calendar-minus f-16"></i>
+                    <span class="hide-section m-start-10">التقويم </span>
+                </a>
+            </li>
+            <li class="about_section">
+                <a href="rating.html" class="d-flex align-items-center main-color-2 p-10 f-16">
+                    <i class="fa-regular fa-star f-16"></i>
+                    <span class="hide-section m-start-10">تقييماتي </span>
+                </a>
+            </li>
+            <li class="about_section">
+                <a href="keyword.html" class="d-flex align-items-center main-color-2 p-10 f-16">
+                    <i class="fa-regular fa-keyboard  f-16"></i>
+                    <span class="hide-section m-start-10"> كلمات مفتاحية </span>
+                </a>
+            </li>
+            <li class="about_section">
+                <a href="financialAccounts.html" class="d-flex align-items-center main-color-2 p-10 f-16">
+                    <i class="fa-regular fa-paste  f-16"></i>
+                    <span class="hide-section m-start-10">الحسابات المالية</span>
+                </a>
+            </li>
+            <li class="about_section">
+                <a href="settings.html" class="d-flex align-items-center main-color-2 p-10 f-16">
+                    <i class="fa-solid fa-gear  f-16"></i>
+                    <span class="hide-section m-start-10"> الاعدادات </span>
+                </a>
+            </li>
+            <li class="about_section">
+                <a href="contactUs.html" class="d-flex align-items-center main-color-2 p-10 f-16">
+                    <i class="fa-solid fa-phone  f-16"></i>
+                    <span class="hide-section m-start-10 "> تواصل معنا </span>
+                </a>
+            </li>
+            <li class="about_section">
+                <a href="ComplaintsAndSuggestions.html" class="d-flex align-items-center main-color-2 p-10 f-16">
+                    <i class="fa-solid fa-file-circle-exclamation f-16"></i>
+                    <span class="hide-section m-start-10 "> الشكاوي والمقترحات </span>
+                </a>
+            </li>
+
+            <li class="about_section">
+                <a href="termsAndCondition.html" class="d-flex align-items-center main-color-2 p-10 f-16">
+                    <i class="fa-solid fa-file-circle-check f-16"></i>
+                    <span class="hide-section m-start-10 f-16"> الشروط والاحكام </span>
+                </a>
+            </li>
+            <li class="about_section">
+                <a href="login.html" class="d-flex align-items-center main-color-2 p-10 f-16">
+                    <i class="fa-solid fa-right-from-bracket f-16"></i>
+                    <span class="hide-section m-start-10"> تسجيل الخروج </span>
+                </a>
+            </li>
+
+
+        </ul>
+    </div>
+    <div id="main">
+        <header class="dashboard_topper p-10">
+            <div class="container">
+                <div class="flex-between">
+                    <a href="index.html" class="m-auto">
+                        <img src="img/logo-main.png" alt="logo" class="logo m-end-10" loading="lazy">
+                    </a>
+                    <a class="position-relative" href="notification.html">
+                        <i class="fa-regular fa-bell f-27  text-dark"></i>
+                        <div class="contain-notification-num">
+                            <span>3</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </header>
+        <div class="body-content">
+            <div class="container">
+                <div class="s-space frame p-4">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="frame mb-3 d-flex gap-20 flex-wrap">
+                                <div class="logo-bg flex-center">
+                                    <img src="img/logo.png" class="logo md" alt="logo">
+                                </div>
+                                <div class="grow-1">
+                                    <div class="border-bottom flex-between mb-2 pb-2 flex-wrap">
+                                        <div><span class="text-muted">رقم الاستشارة : </span><span
+                                                class="font-weight-bold">1234</span>
+                                        </div>
+                                        <span class="text-muted">14/5/2023</span>
+                                    </div>
+                                    <div class="box-desctipe">
+                                        <span>استشارة حالية</span>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="frame mb-3 ">
+                                <h6 class="mb-2 f-15">
+                                    نوع الباقة
+                                </h6>
+                                <div class="d-flex align-items-center gap-20 flex-wrap">
+                                    <div class="bg-main rad-50 p-2 ">
+                                        <img src="img/backage.png" alt="backage" class="backage">
+                                    </div>
+                                    <div>
+                                        <h6 class="font-weight-bold f-15"> باقة شهرية</h6>
+                                        <div class="text-muted">
+                                            <span> عدد الاستشارات : </span>
+                                            <span>4</span>
+                                            <span>استشارات </span>
+                                        </div>
+                                    </div>
+                                    <div class="main-color">
+                                        <span class="font-weight-bold f-15">150</span>
+                                        <span> ر.س </span>
+                                        <div> قيمة الضريبة</div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div class="frame mb-3 ">
+                                <h6 class="mb-2 f-15">عدد الاستشارات المتبقيه </h6>
+                                <div class="sm-main-box">
+                                    <span>4</span><span>استشارات</span>
+                                </div>
+                            </div>
+                            <div class="frame mb-3 ">
+                                <h6 class="mb-2 f-15"> مواعيد الاستشارات </h6>
+                                <div class="showTime mb-3">
+                                    <div>
+                                        <div>
+                                            <spa> الاحد </spa>
+                                            <span> 2 فبراير 2023</span>
+                                        </div>
+                                        <div>
+                                            <span>من</span>
+                                            <span>10</span>
+                                            <span>ص</span>
+                                            <span>الي </span>
+                                            <span>6</span>
+                                            <span>م</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="showTime mb-3">
+                                    <div>
+                                        <div>
+                                            <spa> الاحد </spa>
+                                            <span> 2 فبراير 2023</span>
+                                        </div>
+                                        <div>
+                                            <span>من</span>
+                                            <span>10</span>
+                                            <span>ص</span>
+                                            <span>الي </span>
+                                            <span>6</span>
+                                            <span>م</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="showTime mb-3  flex-wrap gap-5">
+                                    <div>
+                                        <div>
+                                            <spa> الاحد </spa>
+                                            <span> 2 فبراير 2023</span>
+                                        </div>
+                                        <div>
+                                            <span>من</span>
+                                            <span>10</span>
+                                            <span>ص</span>
+                                            <span>الي </span>
+                                            <span>6</span>
+                                            <span>م</span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        الموعد الجديد <span>من</span><span>4:30</span> <span>ص </span><span>الي </span>
+                                        <span>4:30</span> <span>ص </span>
+                                    </div>
+
+                                </div>
+                                <div class="showTime mb-3">
+                                    <div>
+                                        <div>
+                                            <spa> الاحد </spa>
+                                            <span> 2 فبراير 2023</span>
+                                        </div>
+                                        <div>
+                                            <span>من</span>
+                                            <span>10</span>
+                                            <span>ص</span>
+                                            <span>الي </span>
+                                            <span>6</span>
+                                            <span>م</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="showTime mb-3">
+                                    <div>
+                                        <div>
+                                            <spa> الاحد </spa>
+                                            <span> 2 فبراير 2023</span>
+                                        </div>
+                                        <div>
+                                            <span>من</span>
+                                            <span>10</span>
+                                            <span>ص</span>
+                                            <span>الي </span>
+                                            <span>6</span>
+                                            <span>م</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="bg-main-2 text-center p-3">
+                                <img src="img/nnnn.jpg" alt="userAcc" class="consulting-user-img">
+                                <h6> نورهان عادل </h6>
+                                <a href="#" class="callBtn">
+                                    <i class="fa-solid fa-phone wh-color m-end-5"></i>
+                                    <span>اتصل الان</span>
+                                </a>
+                            </div>
+                            <!-- tabs /////////////////// -->
+                            <ul class="nav nav-tabs consultingTabs justify-content-between  py-3 px-lg-4 px-sm-2  gap-10"
+                                id="myTab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link  p-0 disabled" id="home-tab" data-toggle="tab"
+                                        data-target="#home" type="button" role="tab" aria-controls="home"
+                                        aria-selected="true">معلومات
+                                        العميل</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link p-0 disabled" id="profile-tab" data-toggle="tab"
+                                        data-target="#profile" type="button" role="tab" aria-controls="profile"
+                                        aria-selected="false">الجدول
+                                        الغذائي </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link p-0 disabled" id="contact-tab" data-toggle="tab"
+                                        data-target="#contact" type="button" role="tab" aria-controls="contact"
+                                        aria-selected="false">معلومات
+                                        غذائية</button>
+                                </li>
+                            </ul>
+                            <div class="bg-main-2  p-lg-4 p-sm-2">
+                                <div class="tab-content bg-wh rad-5" id="myTabContent">
+                                    <div class="activeTab flex-center flex-column p-2">
+                                        <img src="img/No-data-pana.png" alt="no-data" class="no-data mb-20">
+                                        <button type="button" class="btn main_btn"> ادخل بيانات الملف </button>
+                                    </div>
+                                    <div class="tab-pane fade  bg-wh rad-5" id="home" role="tabpanel"
+                                        aria-labelledby="home-tab ">
+                                        <form action="editAndShowConsulting.html" id="form">
+                                            <div class="form-group">
+                                                <label class="form-label" for="name"><span
+                                                        class="m-end-5">الاسم</span><span
+                                                        class="text-danger f-16">*</span></label>
+                                                <input type="text" class="form-control" id="name"
+                                                    placeholder="نورهان عادل">
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="form-label" for="num"><span class="m-end-5">رقم
+                                                        الهوية</span><span class="text-danger f-16">*</span></label>
+                                                <input type="number" class="form-control" id="num"
+                                                    placeholder="ادخل رقم الهوية">
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="form-label" for="age"><span class="m-end-5">العمر
+                                                    </span><span class="text-danger f-16">*</span></label>
+                                                <input type="number" class="form-control" id="age"
+                                                    placeholder="ادخل العمر ">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="text" class="form-label"><span class="m-end-5"> النوع
+                                                    </span><span class="text-danger f-16">*</span></label>
+                                                <select class=" select form-control">
+                                                    <option>انثي </option>
+                                                    <option>ذكر </option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="form-label" for="weight"><span class="m-end-5"> الوزن
+                                                    </span><span class="text-danger f-16">*</span></label>
+                                                <input type="number" class="form-control" id="weight"
+                                                    placeholder=" ادخل الوزن">
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="form-label" for="height"><span class="m-end-5"> الطول
+                                                    </span><span class="text-danger f-16">*</span></label>
+                                                <input type="number" class="form-control" id="height"
+                                                    placeholder=" ادخل الطول ">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="text" class="form-label"> <span class="m-end-5"> الحالة
+                                                        الصحية</span><span class="text-danger f-16">*</span></label>
+                                                <textarea name="text" id="text" rows="5" class="form-control"
+                                                    placeholder="ادخل الحالة الصحية "></textarea>
+                                            </div>
+                                            <button class="btnNext main_btn btn w-100" type="button">التالي</button>
+                                    </div>
+                                    <div class="tab-pane fade" id="profile" role="tabpanel"
+                                        aria-labelledby="profile-tab">
+                                        <div class="form-group">
+                                            <label class="form-label"><span class="m-end-5"> مواعيد العمل </span><span
+                                                    class="text-danger f-16">*</span></label>
+                                            <!-- tabs -->
+                                            <!-- ---------- -->
+                                            <div class="d-flex gap-10 flex-wrap flex-between ">
+                                                <button class=" active day " data-target="#saturday" type="button">السيت
+                                                </button>
+                                                <button class="gray_btn day" data-target="#sunday" type="button"> الاحد
+                                                </button>
+                                                <button class="gray_btn day" data-target="#monday"
+                                                    type="button">الاتنين</button>
+                                                <button class="gray_btn day" data-target="#tuesday"
+                                                    type="button">الثلاثاء</button>
+                                                <button class="gray_btn day" data-target="#wensday"
+                                                    type="button">الاربعاء</button>
+                                                <button class="gray_btn day" data-target="#thursday"
+                                                    type="button">الخميس</button>
+                                                <button class="gray_btn day" data-target="#friday"
+                                                    type="button">الجمعة</button>
+                                            </div>
+                                        </div>
+                                        <div class="overflow-hidden">
+
+                                            <div class="fill-mails my-3 animate__animated  animate__fadeInUp"
+                                                id="saturday">
+                                                <label class="form-label" for="num"><span class="m-end-5 f-17">الوجبة
+                                                    </span><span class="text-danger f-16">*</span>
+                                                </label>
+                                                <div class="mb-3 d-flex align-items-center gap-10 flex-wrap form">
+                                                    <label for="breakfast" class="d-flex align-items-center gap-5">
+                                                        <span>الافطار</span>
+                                                        <input type="radio" id="breakfast" class="form-radio"
+                                                            name="mail" hidden>
+                                                        <label class="radioShape" for="breakfast">
+                                                            <span></span>
+                                                        </label>
+                                                    </label>
+                                                    <label for="snack1" class="d-flex align-items-center gap-5">
+                                                        <span>وجبه خفيفة١ </span>
+                                                        <input type="radio" id="snack1" class="form-radio" name="mail"
+                                                            hidden>
+                                                        <label class="radioShape" for="snack1">
+                                                            <span></span>
+                                                        </label>
+                                                    </label>
+                                                    <label for="thelunch" class="d-flex align-items-center gap-5">
+                                                        <span> الغداء </span>
+                                                        <input type="radio" id="thelunch" class="form-radio" name="mail"
+                                                            hidden>
+                                                        <label class="radioShape" for="thelunch">
+                                                            <span></span>
+                                                        </label>
+                                                    </label>
+                                                    <label for="snack2" class="d-flex align-items-center gap-5">
+                                                        <span>وجبه خفيفة٢ </span>
+                                                        <input type="radio" id="snack2" class="form-radio" name="mail"
+                                                            hidden>
+                                                        <label class="radioShape" for="snack2">
+                                                            <span></span>
+                                                        </label>
+                                                    </label>
+                                                    <label for="dinner" class="d-flex align-items-center gap-5">
+                                                        <span> العشاء </span>
+                                                        <input type="radio" id="dinner" class="form-radio" name="mail"
+                                                            hidden>
+                                                        <label class="radioShape" for="dinner">
+                                                            <span></span>
+                                                        </label>
+                                                    </label>
+                                                </div>
+                                            </div>
+
+                                            <div class="fill-mails my-3 animate__animated animate__fadeInUp"
+                                                id="sunday">
+                                                <label class="form-label" for="num"><span class="m-end-5 f-17">الوجبة
+                                                    </span><span class="text-danger f-16">*</span></label>
+                                                <div class="mb-3 d-flex align-items-center gap-10 flex-wrap form ">
+                                                    <label for="breakfast2" class="d-flex align-items-center gap-5">
+                                                        <span>الافطار</span>
+                                                        <input type="radio" id="breakfast2" class="form-radio"
+                                                            name="mail" hidden>
+                                                        <label class="radioShape" for="breakfast2">
+                                                            <span></span>
+                                                        </label>
+                                                    </label>
+                                                    <label for="snack21" class="d-flex align-items-center gap-5">
+                                                        <span>وجبه خفيفة١ </span>
+                                                        <input type="radio" id="snack21" class="form-radio" name="mail"
+                                                            hidden>
+                                                        <label class="radioShape" for="snack21">
+                                                            <span></span>
+                                                        </label>
+                                                    </label>
+                                                    <label for="thelunch2" class="d-flex align-items-center gap-5">
+                                                        <span> الغداء </span>
+                                                        <input type="radio" id="thelunch2" class="form-radio"
+                                                            name="mail" hidden>
+                                                        <label class="radioShape" for="thelunch2">
+                                                            <span></span>
+                                                        </label>
+                                                    </label>
+                                                    <label for="snack22" class="d-flex align-items-center gap-5">
+                                                        <span>وجبه خفيفة٢ </span>
+                                                        <input type="radio" id="snack22" class="form-radio" name="mail"
+                                                            hidden>
+                                                        <label class="radioShape" for="snack22">
+                                                            <span></span>
+                                                        </label>
+                                                    </label>
+                                                    <label for="dinner2" class="d-flex align-items-center gap-5">
+                                                        <span> العشاء </span>
+                                                        <input type="radio" id="dinner2" class="form-radio" name="mail"
+                                                            hidden>
+                                                        <label class="radioShape" for="dinner2">
+                                                            <span></span>
+                                                        </label>
+                                                    </label>
+                                                </div>
+                                            </div>
+
+                                            <div class="fill-mails my-3 animate__animated animate__fadeInUp"
+                                                id="monday">
+                                                <label class="form-label" for="num"><span class="m-end-5 f-17">الوجبة
+                                                    </span><span class="text-danger f-16">*</span></label>
+                                                <div class="mb-3 d-flex align-items-center gap-10 flex-wrap form">
+                                                    <label for="breakfast3" class="d-flex align-items-center gap-5">
+                                                        <span>الافطار</span>
+                                                        <input type="radio" id="breakfast2" class="form-radio"
+                                                            name="mail" hidden>
+                                                        <label class="radioShape" for="breakfast2">
+                                                            <span></span>
+                                                        </label>
+                                                    </label>
+                                                    <label for="snack31" class="d-flex align-items-center gap-5">
+                                                        <span>وجبه خفيفة١ </span>
+                                                        <input type="radio" id="snack31" class="form-radio" name="mail"
+                                                            hidden>
+                                                        <label class="radioShape" for="snack31">
+                                                            <span></span>
+                                                        </label>
+                                                    </label>
+                                                    <label for="thelunch3" class="d-flex align-items-center gap-5">
+                                                        <span> الغداء </span>
+                                                        <input type="radio" id="thelunch3" class="form-radio"
+                                                            name="mail" hidden>
+                                                        <label class="radioShape" for="thelunch3">
+                                                            <span></span>
+                                                        </label>
+                                                    </label>
+                                                    <label for="snack32" class="d-flex align-items-center gap-5">
+                                                        <span>وجبه خفيفة٢ </span>
+                                                        <input type="radio" id="snack32" class="form-radio" name="mail"
+                                                            hidden>
+                                                        <label class="radioShape" for="snack32">
+                                                            <span></span>
+                                                        </label>
+                                                    </label>
+                                                    <label for="dinner3" class="d-flex align-items-center gap-5">
+                                                        <span> العشاء </span>
+                                                        <input type="radio" id="dinner3" class="form-radio" name="mail"
+                                                            hidden>
+                                                        <label class="radioShape" for="dinner3">
+                                                            <span></span>
+                                                        </label>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="fill-mails my-3 animate__animated animate__fadeInUp"
+                                                id="tuesday" role="tabpanel" aria-labelledby="wensday-tab">
+                                                <label class="form-label" for="num"><span class="m-end-5 f-17">الوجبة
+                                                    </span><span class="text-danger f-16">*</span></label>
+                                                <div class="mb-3 d-flex align-items-center gap-10 flex-wrap form">
+                                                    <label for="breakfast4" class="d-flex align-items-center gap-5">
+                                                        <span>الافطار</span>
+                                                        <input type="radio" id="breakfast4" class="form-radio"
+                                                            name="mail" hidden>
+                                                        <label class="radioShape" for="thelunch3">
+                                                            <span></span>
+                                                        </label>
+                                                    </label>
+                                                    <label for="snack41" class="d-flex align-items-center gap-5">
+                                                        <span>وجبه خفيفة١ </span>
+                                                        <input type="radio" id="snack41" class="form-radio" name="mail"
+                                                            hidden>
+                                                        <label class="radioShape" for="snack41">
+                                                            <span></span>
+                                                        </label>
+                                                    </label>
+                                                    <label for="thelunch4" class="d-flex align-items-center gap-5">
+                                                        <span> الغداء </span>
+                                                        <input type="radio" id="thelunch4" class="form-radio"
+                                                            name="mail" checked hidden>
+                                                        <label class="radioShape" for="thelunch4">
+                                                            <span></span>
+                                                        </label>
+                                                    </label>
+                                                    <label for="snack42" class="d-flex align-items-center gap-5">
+                                                        <span>وجبه خفيفة٢ </span>
+                                                        <input type="radio" id="snack42" class="form-radio" name="mail"
+                                                            hidden>
+                                                        <label class="radioShape" for="snack42">
+                                                            <span></span>
+                                                        </label>
+                                                    </label>
+                                                    <label for="dinner4" class="d-flex align-items-center gap-5">
+                                                        <span> العشاء </span>
+                                                        <input type="radio" id="dinner4" class="form-radio" name="mail"
+                                                            hidden>
+                                                        <label class="radioShape" for="dinner4">
+                                                            <span></span>
+                                                        </label>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="fill-mails my-3 animate__animated animate__fadeInUp"
+                                                id="wensday" role="tabpanel" aria-labelledby="thursday-tab">
+                                                <label class="form-label" for="num"><span class="m-end-5 f-17">الوجبة
+                                                    </span><span class="text-danger f-16">*</span></label>
+                                                <div class="mb-3 d-flex align-items-center gap-10 flex-wrap form">
+                                                    <label for="breakfast5" class="d-flex align-items-center gap-5">
+                                                        <span>الافطار</span>
+                                                        <input type="radio" id="breakfast5" class="form-radio"
+                                                            name="mail" hidden>
+                                                        <label class="radioShape" for="breakfast5">
+                                                            <span></span>
+                                                        </label>
+                                                    </label>
+                                                    <label for="snack51" class="d-flex align-items-center gap-5">
+                                                        <span>وجبه خفيفة١ </span>
+                                                        <input type="radio" id="snack51" class="form-radio" name="mail"
+                                                            hidden>
+                                                        <label class="radioShape" for="snack51">
+                                                            <span></span>
+                                                        </label>
+                                                    </label>
+                                                    <label for="thelunch5" class="d-flex align-items-center gap-5">
+                                                        <span> الغداء </span>
+                                                        <input type="radio" id="thelunch5" nclass="form-radio"
+                                                            name="mail" hidden>
+                                                        <label class="radioShape" for="thelunch5">
+                                                            <span></span>
+                                                        </label>
+                                                    </label>
+                                                    <label for="snack52" class="d-flex align-items-center gap-5">
+                                                        <span>وجبه خفيفة٢ </span>
+                                                        <input type="radio" id="snack52" class="form-radio" name="mail"
+                                                            hidden>
+                                                        <label class="radioShape" for="snack52">
+                                                            <span></span>
+                                                        </label>
+                                                    </label>
+                                                    <label for="dinner5" class="d-flex align-items-center gap-5">
+                                                        <span> العشاء </span>
+                                                        <input type="radio" id="dinner5" class="form-radio" name="mail"
+                                                            hidden>
+                                                        <label class="radioShape" for="dinner5">
+                                                            <span></span>
+                                                        </label>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="fill-mails my-3 animate__animated animate__fadeInUp"
+                                                id="thursday">
+                                                <label class="form-label" for="num"><span class="m-end-5 f-17">الوجبة
+                                                    </span><span class="text-danger f-16">*</span></label>
+                                                <div class="mb-3 d-flex align-items-center gap-10 flex-wrap form">
+                                                    <label for="breakfast6" class="d-flex align-items-center gap-5">
+                                                        <span>الافطار</span>
+                                                        <input type="radio" id="breakfast6" class="form-radio"
+                                                            name="mail" hidden>
+                                                        <label class="radioShape" for="breakfast6">
+                                                            <span></span>
+                                                        </label>
+                                                    </label>
+                                                    <label for="snack61" class="d-flex align-items-center gap-5">
+                                                        <span>وجبه خفيفة١ </span>
+                                                        <input type="radio" id="snack61" class="form-radio" name="mail"
+                                                            hidden>
+                                                        <label class="radioShape" for="snack61">
+                                                            <span></span>
+                                                        </label>
+                                                    </label>
+                                                    <label for="thelunch6" class="d-flex align-items-center gap-5">
+                                                        <span> الغداء </span>
+                                                        <input type="radio" id="thelunch6" class="form-radio"
+                                                            name="mail" hidden>
+                                                        <label class="radioShape" for="thelunch6">
+                                                            <span></span>
+                                                        </label>
+                                                    </label>
+                                                    <label for="snack62" class="d-flex align-items-center gap-5">
+                                                        <span>وجبه خفيفة٢ </span>
+                                                        <input type="radio" id="snack62" class="form-radio" name="mail"
+                                                            hidden>
+                                                        <label class="radioShape" for="snack62">
+                                                            <span></span>
+                                                        </label>
+                                                    </label>
+                                                    <label for="dinner6" class="d-flex align-items-center gap-5">
+                                                        <span> العشاء </span>
+                                                        <input type="radio" id="dinner6" class="form-radio" name="mail"
+                                                            hidden>
+                                                        <label class="radioShape" for="dinner6">
+                                                            <span></span>
+                                                        </label>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="fill-mails my-3 animate__animated animate__fadeInUp"
+                                                id="friday">
+                                                <label class="form-label" for="num"><span class="m-end-5 f-17">الوجبة
+                                                    </span><span class="text-danger f-16">*</span></label>
+                                                <div class="mb-3 d-flex align-items-center gap-10 flex-wrap form">
+                                                    <label for="breakfast7" class="d-flex align-items-center gap-5">
+                                                        <span>الافطار</span>
+                                                        <input type="radio" class="form-radio" id="breakfast7"
+                                                            name="mail" class="form-radio" name="mail" hidden>
+                                                        <label class="radioShape" for="dinner6">
+                                                            <span></span>
+                                                        </label>
+                                                    </label>
+                                                    <label for="snack71" class="d-flex align-items-center gap-5">
+                                                        <span>وجبه خفيفة١ </span>
+                                                        <input type="radio" id="snack71" class="form-radio" name="mail"
+                                                            hidden>
+                                                        <label class="radioShape" for="dinner6">
+                                                            <span></span>
+                                                        </label>
+                                                    </label>
+                                                    <label for="thelunch7" class="d-flex align-items-center gap-5">
+                                                        <span> الغداء </span>
+                                                        <input type="radio" id="thelunch7" class="form-radio"
+                                                            name="mail" hidden>
+                                                        <label class="radioShape" for="dinner6">
+                                                            <span></span>
+                                                        </label>
+                                                    </label>
+                                                    <label for="snack72" class="d-flex align-items-center gap-5">
+                                                        <span>وجبه خفيفة٢ </span>
+                                                        <input type="radio" id="snack72" class="form-radio" name="mail"
+                                                            hidden>
+                                                        <label class="radioShape" for="snack72">
+                                                            <span></span>
+                                                        </label>
+                                                    </label>
+                                                    <label for="dinner7" class="d-flex align-items-center gap-5">
+                                                        <span> العشاء </span>
+                                                        <input type="radio" id="dinner7" class="form-radio" name="mail"
+                                                            hidden>
+                                                        <label class="radioShape" for="dinner7">
+                                                            <span></span>
+                                                        </label>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="mailContent form-control"
+                                                placeholder="ادخل محتوي الوجبة">
+                                        </div>
+                                        <div class="words p-3">
+                                            <div class="containWord text-center">
+                                                <p class="m-0">بيضة </p>
+                                            </div>
+                                            <div class="containWord text-center">
+                                                <p class="m-0">توست</p>
+                                            </div>
+                                            <div class="containWord text-center">
+                                                <p class="m-0">تفاحة </p>
+                                            </div>
+                                            <div class="containWord text-center">
+                                                <p class="m-0">زبادي</p>
+                                            </div>
+                                            <div class="containWord text-center">
+                                                <p class="m-0">جبن</p>
+                                            </div>
+                                            <div class="containWord text-center">
+                                                <p class="m-0">مشاوي</p>
+                                            </div>
+                                            <div class="containWord text-center">
+                                                <p class="m-0">لبن </p>
+                                            </div>
+                                            <div class="containWord text-center">
+                                                <p class="m-0">قهوة </p>
+                                            </div>
+                                            <div class="containWord text-center">
+                                                <p class="m-0">حلوي</p>
+                                            </div>
+                                            <div class="containWord text-center">
+                                                <p class="m-0"> فاكهة </p>
+                                            </div>
+                                            <div class="containWord text-center">
+                                                <p class="m-0">مشاوي</p>
+                                            </div>
+
+
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <button class="btnNext btn main_btn w-100" type="button">التالي</button>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <buttton class="btnPrevious btn gray_btn main_btn w-100" type="button">
+                                                    السابق
+                                                </buttton>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade informationTab" id="contact" role="tabpanel"
+                                        aria-labelledby="contact-tab">
+                                        <div class="form-group containInformation">
+
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="form-label" for="title"><span class="m-end-5">
+                                                    عنوان المعلومات الغذائية</span><span
+                                                    class="text-danger f-16">*</span></label>
+                                            <input type="text" class="form-control" id="title"
+                                                placeholder=" عنوان المعلومات الغذائية">
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="form-label" for="information"><span class="m-end-5">نص
+                                                    المعلومات الغذائية
+                                                </span><span class="text-danger f-16">*</span></label>
+
+                                            <textarea name="information" id="information" cols="30" rows="3"
+                                                class="form-control"
+                                                placeholder="ادخل نص المعلومات الغذائية"></textarea>
+                                        </div>
+                                        <div class="addInformation  main-color mb-3">
+                                            اضافة معلومه غذائية جديدة</div>
+                                        <div>
+                                            <div class="h6 form-label">الكلمات المفتاحية</div>
+                                            <div class="words p-3">
+                                                <div class="containWord text-center">
+                                                    <p class="m-0">بيضة </p>
+                                                </div>
+                                                <div class="containWord text-center">
+                                                    <p class="m-0">توست</p>
+                                                </div>
+                                                <div class="containWord text-center">
+                                                    <p class="m-0">تفاحة </p>
+                                                </div>
+                                                <div class="containWord text-center">
+                                                    <p class="m-0">زبادي</p>
+                                                </div>
+                                                <div class="containWord text-center">
+                                                    <p class="m-0">جبن</p>
+                                                </div>
+                                                <div class="containWord text-center">
+                                                    <p class="m-0">مشاوي</p>
+                                                </div>
+                                                <div class="containWord text-center">
+                                                    <p class="m-0">لبن </p>
+                                                </div>
+                                                <div class="containWord text-center">
+                                                    <p class="m-0">قهوة </p>
+                                                </div>
+                                                <div class="containWord text-center">
+                                                    <p class="m-0">حلوي</p>
+                                                </div>
+                                                <div class="containWord text-center">
+                                                    <p class="m-0"> فاكهة </p>
+                                                </div>
+                                                <div class="containWord text-center">
+                                                    <p class="m-0">مشاوي</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        </form>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <button class="submitForm btn gray_btn main_btn w-100" type="submit"
+                                                    form="form">انهاء
+                                                    الملف</button>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <buttton class="btnPrevious btn main_btn w-100" type="button">
+                                                    السابق
+                                                </buttton>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+
+    </div>
+    </div>
+
+
+    </div>
+    </div>
+    </div>
+    <!-- ________________ // loader // ________________ -->
+    <div class="loader">
+        <div class="path">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <!-- _______________ // end_Page // _______________ -->
+    <!-- fixed -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/select2.min.js"></script>
+    <!-- // main-script //  -->
+    <script src="js/script.js"></script>
+    <script>
+        let allLinks = document.querySelectorAll(".side_menu_ul li a ");
+
+        allLinks.forEach((link) => {
+            if (link.href == location.href) {
+                link.parentElement.classList.add('active')
+            } else if (link.href !== location.href) {
+                link.parentElement.classList.remove('active');
+            }
+        })
+        document.querySelector('.activeTab').onclick = function () {
+            this.nextElementSibling.classList.add('show', "active", 'animate__animated', 'animate__fadeIn');
+            document.querySelector('.nav-link').classList.add('active')
+            this.style.display = 'none'
+            this.classList.add('animate__animated', 'animate__bounceOut')
+            document.querySelectorAll('.nav-link').forEach((el) => {
+                el.classList.remove('disabled')
+            })
+
+
+        }
+        let showDays = document.querySelectorAll(".day");
+        let fillMails = document.querySelectorAll('.fill-mails')
+        let mailContent = document.querySelector('.mailContent')
+        let keyWords = document.querySelectorAll('.containWord')
+        showDays.forEach((day) => {
+
+            day.addEventListener("click", function (e) {
+                showDays.forEach((day) => {
+                    day.classList.remove('active')
+                })
+                e.currentTarget.classList.add('active')
+                // mailContent.value = ''
+
+                fillMails.forEach((fillMail) => {
+                    fillMail.style.display = "none"
+                })
+                document.querySelector(e.currentTarget.dataset.target).style.display = "block"
+                var dayMail = document.querySelector(e.currentTarget.dataset.target);
+                var dayform = dayMail.querySelector('.form')
+                let allCheckInput = dayform.querySelectorAll("input[name=mail]")
+                let firstCheckInput = dayform.querySelector("input[name=mail]")
+                if (firstCheckInput.getAttribute("data-name") != '') {
+                    let val = firstCheckInput.getAttribute("data-name")
+                    mailContent.value = val
+                } else {
+                    mailContent.value = ''
+                }
+                allCheckInput.forEach((el) => {
+                    el.checked = false;
+                })
+                allCheckInput[0].checked = true
+                keyWords.forEach((keyWord) => {
+                    keyWord.onclick = function () {
+                        let text = this.querySelector('p').innerHTML;
+
+                        mailContent.value += ` ${text} `
+                        mailContent.onkeyup()
+                    }
+                })
+                mailContent.onkeyup = function () {
+
+                    let checked = dayform.querySelector("input[type=radio]:checked")
+
+                    let inputVal = document.querySelector('.mailContent').value
+                    checked.setAttribute("data-name", inputVal)
+                    dayform.onchange = function () {
+                        let checked = dayform.querySelector("input[name=mail]:checked")
+                        mailContent.value = ''
+                        if (checked.getAttribute("data-name") != '') {
+                            let val = checked.getAttribute("data-name")
+                            mailContent.value = val
+                        }
+                    }
+                }
+
+
+            })
+        })
+
+        window.addEventListener('load', function () {
+            document.querySelector(".day").click()
+        })
+        document.querySelector('.addInformation').onclick = function () {
+            if (document.querySelector('#title').value == '' || document.querySelector('#information').value == '') {
+                return
+            } else if (document.querySelector('#title').value != '' || document.querySelector('#information').value != '') {
+                let parent = document.createElement('div')
+
+                parent.classList.add('information')
+                let containTitle = document.createElement('div')
+                containTitle.classList.add('flex-between', 'flex-wrap', 'mb-2');
+
+                let title = document.createElement('h6')
+                let del = document.createElement('i')
+                del.classList.add('fa-square-xmark', 'fa-solid', 'text-danger', 'f-17')
+                del.addEventListener('click', function () {
+                    this.parentElement.parentElement.remove()
+                })
+                let p = document.createElement('p')
+                p.classList.add('text-muted')
+                containTitle.append(title)
+                containTitle.append(del)
+                parent.append(containTitle)
+                parent.append(p)
+                let titleVal = document.querySelector('#title').value
+                let informationText = document.querySelector('#information').value
+                title.textContent = titleVal;
+                title.classList.add('main-color')
+                p.textContent = ` ${informationText} `;
+                let containInformation = document.querySelector('.containInformation')
+                containInformation.append(parent)
+                document.querySelector('#title').value = ''
+                document.querySelector('#information').value = ''
+
+
+            }
+
+
+        }
+        let keyWordsTwo = document.querySelector('.informationTab').querySelectorAll('.containWord')
+        keyWordsTwo.forEach((el) => {
+
+            el.addEventListener(('click'), function () {
+                console.log(this)
+                let text = this.querySelector('p').innerHTML;
+                document.querySelector('#information').value += ` ${text} `
+            })
+        })
+
+        $(document).ready(function () {
+            $('.select').select2({
+                placeholder: "30 دقيقة",
+                dropdownCssClass: 'no-search',
+
+            });
+        });
+
+        $(document).ready(function () {
+            $('.btnNext').click(function () {
+                $('.nav-tabs .active').parent().next('li').find('button').trigger('click');
+            });
+
+            $('.btnPrevious').click(function () {
+                $('.nav-tabs .active').parent().prev('li').find('button').trigger('click');
+            });
+        })
+
+
+    </script>
+
+</body>
+
+</html>

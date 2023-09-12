@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <!-- meta  -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- // bootstrab // -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- // fontawesome // -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- // css // -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/en-style.css"> -->
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="main" class="fullWidth">
+        <header class="dashboard_topper p-10">
+            <div class="container">
+                <div class="flex-center">
+                    <a href="index.html" class="m-auto">
+                        <img src="img/logo-main.png" alt="logo" class="logo m-end-10" loading="lazy">
+                    </a>
+                </div>
+            </div>
+        </header>
+        <div class="body-content">
+            <div class="container">
+                <div class="row flex-column align-items-center">
+                    <div class="col-md-6 col-12">
+                        <div class="frame s-space p-4 ">
+                            <div class="contain-title text-center">
+                                <h5 class="text-center font-weight-bolder  mb-2">تسجيل الدخول</h5>
+                                <div class="text-muted mb-2 ">اهلا بك وبعودتك</div>
+                            </div>
+                            <form action="index.html">
+                                <div class="form-group">
+                                    <label class="form-label" for="id"><span class="m-end-5">رقم الجوال / البريد
+                                            الالكتروني </span><span class="text-danger f-16">*</span></label>
+                                    <input type="text" class="form-control" id="id"
+                                        placeholder=" رقم الجوال / البريد الالكتروني ">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label" for="mail"><span class="m-end-5">كلمه المرور </span><span
+                                            class="text-danger f-16">*</span></label>
+                                    <input type="email" class="form-control" id="mail" placeholder=" ادخل كلمة المرور ">
+                                </div>
+
+                                <div class="form-group flex-between">
+                                    <label class="input-group-prepend gap-10 ">
+
+                                        <input type="checkbox" class="checkBox" id="check1"
+                                            aria-label="Checkbox for following text input" hidden>
+                                        <div class="contain-check">
+                                            <i class="fa-solid fa-check"></i>
+                                        </div>
+                                        <label for="check1"> تذكرني
+                                        </label>
+                                    </label>
+                                    <a href="forgetPassword.html" class="main-color text-underline "> هل نسيت كلمة
+                                        المرور ؟ </a>
+                                </div>
+                                <div class="form-group">
+                                    <button class="btn main_btn w-100"> دخول </button>
+                                </div>
+                                <div class="text-center  mb-1">
+                                    <span>لا يوجد لديك حساب </span>
+                                    <a href="createAccount.html" class="main-color"> قم بانشاء حساب </a>
+                                </div>
+                                <div class="text-center">
+                                    <span>في حالة وجود مشكله بالتسجيل </span>
+                                    <a href="contactUs.html" class="main-color"> قم بالتواصل معنا </a>
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+    <!-- ________________ // loader // ________________ -->
+    <div class="loader">
+        <div class="path">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <!-- _______________ // end_Page // _______________ -->
+    <!-- fixed -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <!-- // main-script //  -->
+    <script src="js/script.js"></script>
+    <script>
+        let allLinks = document.querySelectorAll(".side_menu_ul li a ");
+
+        allLinks.forEach((link) => {
+            if (link.href == location.href) {
+                link.parentElement.classList.add('active')
+            } else if (link.href !== location.href) {
+                link.parentElement.classList.remove('active');
+            }
+        })
+    </script>
+</body>
+
+</html>

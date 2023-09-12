@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <!-- meta  -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- // bootstrab // -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/validation-code.css">
+    <!-- // fontawesome // -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- // css // -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/en-style.css"> -->
+    <title>verficationCode</title>
+</head>
+<body>
+    <div id="main" class="fullWidth">
+        <header class="dashboard_topper p-10">
+            <div class="container">
+                <div class="flex-center">
+                    <a href="index.html">
+                         <img src="img/logo-main.png" alt="logo" class="logo m-end-10" loading="lazy">
+                    </a>
+                </div>
+            </div>
+        </header>
+        <div class="body-content">
+            <div class="container">
+                <div class="row flex-column align-items-center">
+                    <div class="col-md-6 col-12">
+                        <div class="frame s-space p-4 ">
+                            <div class="contain-title text-center">
+                                <h5 class="mb-2 font-weight-bolder"> كود التحقق </h4>
+                                <span class="text-muted "> برجاء ادخال الكود المرسل الي رقم جوالك</span>
+                            </div>
+                            <form action="verficationCode.html">
+                                <div class="form-group mt-2">
+                                    <!-- Required -->
+                                    <div class="flex-center">
+                                        <input type="number" class="pin" maxlength="6" autofocus />
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <button class="btn main_btn w-100"> ارسال </button>
+                                </div>
+                                <a href="" class="text-center d-block main-color"> اعادة ارسال </a>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   <!-- ________________ // loader // ________________ -->
+   <div class="loader">
+    <div class="path">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</div>
+    <!-- _______________ // end_Page // _______________ -->
+    <!-- fixed -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+
+
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script type="text/javascript" src="js/jquery.segmentedInput.js"></script>
+
+    <!-- // main-script //  -->
+    <script src="js/script.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.pin').segmentedInput({
+                // options
+                // autoSubmit: true,
+                fieldClasses: 'class1 class2'
+            });
+        });
+
+    </script>
+</body>
+
+</html>
